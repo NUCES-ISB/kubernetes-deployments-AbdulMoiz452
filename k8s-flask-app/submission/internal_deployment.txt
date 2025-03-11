@@ -1,0 +1,11 @@
+# Placeholder for Internal Deployment Snapshot
+
+This file will be replaced with the actual output of:
+```
+kubectl get deployments -o wide
+```
+
+Expected output format:
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES              SELECTOR
+flask-app   2/2     2            2           1m    flask-app    flask-app:latest    app=flask-app
+postgres    1/1     1            1           1m    postgres     postgres:13         app=postgres

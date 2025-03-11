@@ -1,0 +1,25 @@
+# Placeholder for 'kubectl get all' Output
+
+This file will be replaced with the actual output of:
+```
+kubectl get all
+```
+
+Expected output format:
+NAME                             READY   STATUS    RESTARTS   AGE
+pod/flask-app-xxxxxxxxx-xxxxx    1/1     Running   0          1m
+pod/flask-app-xxxxxxxxx-xxxxx    1/1     Running   0          1m
+pod/postgres-xxxxxxxxx-xxxxx     1/1     Running   0          1m
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+service/flask-app    NodePort    10.xxx.xxx.xxx   <none>        80:30000/TCP   1m
+service/kubernetes   ClusterIP   10.xxx.xxx.xxx   <none>        443/TCP        1m
+service/postgres     ClusterIP   10.xxx.xxx.xxx   <none>        5432/TCP       1m
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/flask-app   2/2     2            2           1m
+deployment.apps/postgres    1/1     1            1           1m
+
+NAME                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/flask-app-xxxxxxxxx    2         2         2       1m
+replicaset.apps/postgres-xxxxxxxxx     1         1         1       1m
